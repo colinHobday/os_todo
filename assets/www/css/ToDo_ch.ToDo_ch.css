@@ -1,0 +1,369 @@
+﻿/*----------------------------------------------------*\
+
+    Phone Theme Customization
+    
+    How to generate a theme for your company: 
+    
+    1 - Go to https://silkui.outsystems.com/SilkUIMobileCustomizer/?ApplyTheme=true
+    2 - Generate Theme
+    3 - Click on the "Apply Theme" button
+    
+    Note: All the CSS in this Theme will be replaced, custom CSS needs to be added again or moved to a new Theme
+    
+--------------------------------------------------------
+
+   $. Base Customization        
+        $0. Page layout
+        $1. Buttons / Links
+        $2. Widgets
+        $3. OutSystems UI Blocks
+        $4. Utility classes and colors
+    
+   $5. Custom CSS
+   $6. ExcludeFromPickers
+    
+\*----------------------------------------------------*/
+
+
+
+/*--------------------------------------------------------------*/
+/*--------------------- Base Customization ---------------------*/
+/*--------------------------------------------------------------*/
+
+
+
+/*---------- $0. Page layout ----------*/
+
+.header {
+    background-color: #0096ce; /*primary-color*/
+}
+
+.splash-screen,
+.login-screen {
+    background-color: #0096ce; /*primary-color*/ 
+}
+
+.login-screen a,
+.login-screen a:visited,
+.login-screen a:link {
+    color: #fff;
+    font-weight: bold;
+}
+
+
+/*---------- $1. Buttons and Links ----------*/
+
+a,
+a:link,
+a:visited {
+    color: #0096ce; /*primary-color*/
+}
+
+.btn,
+.btn:hover,
+.btn:focus {
+    border: 1px solid #0096ce; /*primary-color*/
+    color: #0096ce; /*primary-color*/
+}
+
+.btn-primary,
+.btn-primary:hover,
+.btn-primary:focus {
+    background-color: #0096ce; /*primary-color*/
+    color: #fff;
+}
+
+.btn-success,
+.btn-success:hover,
+.btn-success:focus,
+.btn-danger,
+.btn-danger:hover,
+.btn-danger:focus {
+    border: none;
+    color: #fff;
+}
+
+.btn-link,
+.btn-link:hover,
+.btn-link:focus {
+    color: #0096ce; /*primary-color*/ 
+    border: 2px solid transparent; 
+}
+
+[class^="btn background-"],
+[class^="btn background-"]:hover,
+[class^="btn background-"]:focus{
+    border: none;
+}
+
+[class^="btn background-"][disabled],
+[class^="btn background-"][disabled]:hover,
+[class^="btn background-"][disabled]:focus{
+    background-color: #d3d3d3;
+    border: none;
+    color: #fff;
+}
+
+.btn.background-white, 
+.btn.background-white:hover, 
+.btn.background-white:focus {
+    color: #0096ce; /*primary-color*/    
+}
+
+
+/*---------- $2. Widgets ----------*/
+
+/* ButtonGroup */
+button.button-group-item.button-group-selected-item {
+    background-color: #0096ce; /*primary-color*/
+}
+
+/* ButtonGroup Inside HeaderContent */
+.header-content button.button-group-item.button-group-selected-item {
+    color: #0096ce; /*primary-color*/
+}
+
+.header-content button.button-group-item.button-group-selected-item:after {
+    background-color: #0096ce; /*primary-color*/
+}
+
+/* Dropdown */
+[data-dropdown] > div.dropdown-display:after {
+    border-color: #0096ce; /*primary-color*/
+}
+
+[data-dropdown] div.dropdown-popup-row-selected {
+    color: #0096ce; /*primary-color*/
+}
+
+/* Inputs */
+input.checkbox:checked:before {
+    background-color: #0096ce; /*primary-color*/    
+    border: 1px solid #0096ce; /*primary-color*/    
+}
+
+input[data-input]:focus, 
+textarea[data-textarea]:focus {
+    border: 1px solid #0096ce; /*primary-color*/  
+}
+
+/* List Item */
+.list-item-action-primary {
+    background-color: #0096ce; /*primary-color*/
+}
+
+.active-element.list-item:after {
+    background-color: #0096ce; /*primary-color*/
+}
+
+/* Upload */
+[data-upload].upload-image-withoverlay .change-image {
+    background-color: #0096ce; /*primary-color*/
+}
+
+
+/*---------- $3. OutSystems UI Blocks ----------*/
+
+/* Animated Label */
+.animated-label-input input[data-input]:focus {
+    border-bottom: 2px solid #0096ce; /*primary-color*/    
+}
+
+/* Badge */
+.badge.background-white {
+    color: #0096ce; /*primary-color*/     
+}
+
+/* BottomBar */
+.bottom-bar > a.active .bottom-bar-item-text, 
+.bottom-bar > a:active .bottom-bar-item-text, 
+.bottom-bar-items > a.active .bottom-bar-item-text, 
+.bottom-bar-items > a:active .bottom-bar-item-text, 
+.bottom-bar > a.active .bottom-bar-item-icon, 
+.bottom-bar > a:active .bottom-bar-item-icon, 
+.bottom-bar-items > a.active .bottom-bar-item-icon, 
+.bottom-bar-items > a:active .bottom-bar-item-icon {
+    color: #0096ce; /*primary-color*/    
+}
+
+.bottom-bar .floating-actions-items a, 
+.bottom-bar .floating-actions-items a:link, 
+.bottom-bar .floating-actions-items a:visited {
+    color: #0096ce; /*primary-color*/
+}
+
+.bottom-bar > a.active, .bottom-bar > a:active {
+    color:  #0096ce; /*primary-color*/ 
+}
+
+/* Calendar */
+.is-inrange .pika-button {
+    background-color: #0096ce; /*primary-color*/  
+}
+
+.is-endrange .pika-button,
+.is-startrange .pika-button {
+    background-color: #0096ce; /*primary-color*/  
+}
+
+.is-selected .pika-button {
+    background-color: #0096ce; /*primary-color*/ 
+}
+.calendar:not(.interval) .is-startrange:after,
+.calendar:not(.interval) .is-endrange:after {
+    background-color: #0096ce; /*primary-color*/ 
+}
+
+.pika-label {
+    color: #0096ce; /*primary-color*/  
+}
+
+.has-event .pika-button:after {
+    background-color: #0096ce; /*primary-color*/  
+}
+
+/* Card */
+.active-element .card {
+    border-left: 4px solid #0096ce; /*primary-color*/
+}
+
+/* Card Action */
+.card-action {
+    background-color: #0096ce; /*primary-color*/
+}
+
+/* Carousel */
+.owl-theme .owl-nav [class*='owl-'] {
+    color: #0096ce; /*primary-color*/
+}
+
+.carousel .carousel-navigation {
+    color: #0096ce; /*primary-color*/
+}
+
+/* Counter */
+.counter.background-white {
+    color: #0096ce; /*primary-color*/     
+}
+
+/* Floating Actions*/
+.floating-actions .bottom-bar-item {
+    border-color: #0096ce; /*primary-color*/
+    color: #0096ce; /*primary-color*/
+}
+
+/* Search */
+.search-round {    
+    box-shadow: inset 0 0 0 3px #fff;
+}
+
+.search-stick-bottom {
+    background-color: #fff;
+}
+
+.header-right .search-input {
+    background-color: #0096ce; /*primary-color*/    
+}
+
+/* RangeSlider */
+.noUi-origin .noUi-handle-lower:before, 
+.noUi-origin.noUi-connect .noUi-handle-lower:before, 
+.noUi-origin .noUi-handle-lower:after, 
+.noUi-origin.noUi-connect .noUi-handle-lower:after, 
+.noUi-origin.noUi-background .noUi-handle-upper:before {
+    color: #0096ce; /*primary-color*/   
+}
+
+.noUi-origin.noUi-connect {
+    background-color: #0096ce; /*primary-color*/    
+}
+
+.noUi-base {
+    background-color: #0096ce; /*primary-color*/      
+}
+
+/* Section Expandable */ 
+.section-expandable-icon:before,
+.section-expandable-icon:after {
+    background-color: #0096ce; /*primary-color*/
+}
+
+.section-expandable.open .section-expandable-title .dividers {
+    color: #0096ce; /*primary-color*/  
+}
+
+/* Tabs */
+.tabs-underline {
+    background-color: #0096ce; /*primary-color*/ 
+}
+
+.tabs-header-tab.active {
+    color: #0096ce; /*primary-color*/ 
+}
+
+/* Tag */
+.tag.text-primary-color {
+    background-color: #0096ce; /*primary-color*/ 
+    border: 1px solid #0096ce; /*primary-color*/ 
+}
+
+.tag.text-white {
+    color: #0096ce; /*primary-color*/     
+}
+
+/* User Avatar */
+.avatar.background-white {
+    color: #0096ce; /*primary-color*/     
+}
+
+/* Wizard */
+.wizard-item-wrapper.active .wizard-label {
+    color: #0096ce; /*primary-color*/ 
+}
+
+.wizard-item-wrapper.past .wizard-item, .wizard-item-wrapper.active .wizard-item {
+    background-color: #0096ce; /*primary-color*/ 
+}
+
+.wizard-item-wrapper.past:before {
+    background-color: #0096ce; /*primary-color*/ 
+}
+
+/*---------- 4. Utility classes and colors ----------*/
+
+.background-primary-color {
+    background-color: #0096ce; /*primary-color*/
+}
+
+.icon-circle {
+    background-color: #0096ce; /*primary-color*/
+}
+
+.text-primary-color {
+    color: #0096ce; /*primary-color*/
+}
+
+/*------------------------------------------------------------------*/
+/*--------------------- End Base Customization ---------------------*/
+/*------------------------------------------------------------------*/
+
+
+/*---------- $5. Custom CSS ----------*/
+
+
+
+
+
+
+
+
+
+
+
+
+/*---------- $6. ExcludeFromPickers ----------*/
+
+/* ExcludeFromPickers: active, animated-label-input, avatar, badge, bottom-bar, bottom-bar-item, bottom-bar-item-icon, bottom-bar-items, bottom-bar-item-text, button-group-item, button-group-selected-item, counter, disabled, dividers, floating-actions,
+floating-actions-items, form, header, header-content, header-right, is-endrange, is-inrange, is-selected, is-startrange, list-item-action-primary, ListRecords, login-logo, login-screen, noUi-background, noUi-base, noUi-connect, noUi-handle-lower,
+noUi-handle-upper, noUi-origin, open, owl-nav, owl-theme, past, phone, pika-button, pika-label, search-input, search-round, search-stick-bottom, section-expandable, section-expandable-icon, section-expandable-title, splash-screen, tablet, tabs-header-tab,
+tabs-underline, tag, wizard-item, wizard-item-wrapper, wizard-label */
